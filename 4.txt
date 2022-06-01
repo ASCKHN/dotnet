@@ -1,0 +1,11 @@
+Public Class Form1
+    Private Sub Button1_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button1.Click
+        Dim inp As Integer = TextBox1.Text
+        Dim fac As Integer = 1
+        While (inp > 0)
+            fac = inp * fac
+            inp -= 1
+        End While
+        Label3.Text = fac
+    End Sub
+End Class

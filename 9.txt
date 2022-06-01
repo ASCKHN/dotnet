@@ -1,0 +1,44 @@
+Public Class Form1
+
+    Private Sub Form1_KeyDown(ByVal sender As Object, ByVal e As System.Windows.Forms.KeyEventArgs) Handles Me.KeyDown
+        If e.KeyCode = Keys.F12 Then
+            TextBox4.Text = e.KeyCode
+        End If
+    End Sub
+
+    Private Sub Form1_Load(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MyBase.Load
+        Me.Text = "Form Load"
+
+        Dim btn As New Windows.Forms.Button
+        btn.Text = "Button at form load"
+        btn.Height = "30"
+        btn.Left = "200"
+        btn.Top = "50"
+
+        Me.Controls.Add(btn)
+    End Sub
+
+    Private Sub Form1_MouseClick(ByVal sender As Object, ByVal e As System.Windows.Forms.MouseEventArgs) Handles Me.MouseClick
+        If e.Button = MouseButtons.Right Then
+            Me.BackColor = Color.Aqua
+        End If
+
+    End Sub
+
+
+    Private Sub Form1_MouseDown(ByVal sender As Object, ByVal e As System.Windows.Forms.MouseEventArgs) Handles Me.MouseDown
+
+        If e.Button = MouseButtons.Left Then
+            TextBox2.Text = "Mouse click at " & e.X & " " & e.Y
+        End If
+    End Sub
+
+
+    Private Sub Form1_MouseEnter(ByVal sender As Object, ByVal e As System.EventArgs) Handles Me.MouseEnter
+        TextBox1.Text = "Mouse entered"
+    End Sub
+
+    Private Sub Form1_MouseLeave(ByVal sender As Object, ByVal e As System.EventArgs) Handles Me.MouseLeave
+        TextBox3.Text = "Mouse leave"
+    End Sub
+End Class

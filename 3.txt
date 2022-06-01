@@ -1,0 +1,15 @@
+Public Class Form1
+
+    Private Sub Button1_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button1.Click
+        Dim num As Integer = numinput.Text
+        MessageBox.Show("Square is " & (num * num))
+    End Sub
+
+    Private Sub numinput_TextChanged(ByVal sender As System.Object, ByVal e As System.Windows.Forms.KeyPressEventArgs) Handles numinput.KeyPress
+        If e.KeyChar = ChrW(Keys.Enter) Then
+            Dim num As Integer = numinput.Text
+            MessageBox.Show("Square is " & (num * num))
+        End If
+    End Sub
+End Class
+

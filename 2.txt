@@ -1,0 +1,24 @@
+Module Module1
+
+    Sub Main()
+        Dim num1, num2, num3 As Integer
+        Console.Write("Enter a: ")
+        num1 = Console.ReadLine()
+        Console.Write("Enter b: ")
+        num2 = Console.ReadLine()
+        num3 = num1 + num2
+        Console.WriteLine("Additon: {0}", num3)
+        num3 = num1 / num2
+        Console.WriteLine("Divide: {0}", num3)
+        num3 = num1 * num2
+        Console.WriteLine("Multiply: {0}", num3)
+        num3 = num1 ^ num2
+        Console.WriteLine("Exponent: {0}", num3)
+        num3 = num1 Mod num2
+        Console.WriteLine("Reminder: {0}", num3)
+        Console.ReadLine()
+
+    End Sub
+
+
+End Module

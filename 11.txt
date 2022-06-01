@@ -1,0 +1,14 @@
+Public Class Form1
+
+    Private Sub Button1_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button1.Click
+        Dim choice As String
+        choice = InputBox("1 for red 2 for blue 3 for green 4 for black", "Enter your choice")
+        Select Case choice
+            Case 1 : Me.BackColor = Color.Red
+            Case 2 : Me.BackColor = Color.Blue
+            Case 3 : Me.BackColor = Color.Green
+            Case 4 : Me.BackColor = Color.Black
+            Case Else : MsgBox("Invalid Choice")
+        End Select
+    End Sub
+End Class

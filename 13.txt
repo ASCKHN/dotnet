@@ -1,0 +1,16 @@
+Public Class Form1
+
+    Private Sub Button1_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button1.Click
+        Dim names() As String
+        ReDim names(4)
+        names(0) = "Khanna"
+        names(1) = "Lahore"
+        names(2) = "Chandigarh"
+        names(3) = "Panipat"
+        names(4) = "Ludhaina"
+
+        For i = 0 To names.Length - 1
+            ListBox1.Items.Add(names(i))
+        Next
+    End Sub
+End Class
